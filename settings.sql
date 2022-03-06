@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS <project-name-here>;
-CREATE DATABASE <project-name-here>;
+DROP DATABASE IF EXISTS project4-api;
+CREATE DATABASE project4-api;
