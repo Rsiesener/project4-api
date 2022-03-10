@@ -25,6 +25,7 @@ class FoldersView(generics.ListCreateAPIView):
         """Create request"""
         # Add user to request data object
         request.data['folder']['owner'] = request.user.id
+        print(request.data)
         # Serialize/create folder
         folder = FolderSerializer(data=request.data['folder'])
         # If the folder data is valid according to our serializer...

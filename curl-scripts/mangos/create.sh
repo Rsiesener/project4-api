@@ -7,9 +7,7 @@ curl "http://localhost:8000/mangos/" \
   --header "Authorization: Token ${TOKEN}" \
   --data '{
     "mango": {
-      "name": "'"${NAME}"'",
-      "color": "'"${COLOR}"'",
-      "ripe": "'"${RIPE}"'"
+      "name": "'"${NAME}"'"
     }
   }'
 
