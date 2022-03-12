@@ -34,6 +34,7 @@ class FoldersView(generics.ListCreateAPIView):
             folder.save()
             return Response({ 'folder': folder.data }, status=status.HTTP_201_CREATED)
         # If the data is not valid, return a response with the errors
+        print(folder.errors)
         return Response(folder.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class FolderDetailView(generics.RetrieveUpdateDestroyAPIView):
